@@ -36,7 +36,17 @@ public class CaesarCipher {
 		 */
 		
 		for (int i=0; i<plainText.length();i++) {
-			checkSpace = "" + plainText.charAt(i);
+			if (plainText.charAt(i) != ' ') {
+				index = alpha.indexOf(plainText.charAt(i));
+				keyAdded = (index + key) % alpha.length();
+				secretText = secretText + alpha.charAt(keyAdded);
+			} else {
+				secretText = secretText + " ";
+			}
+			
+			
+			
+			/*checkSpace = "" + plainText.charAt(i);
 			if(checkSpace.equals(" ")) {
 				secretText += checkSpace;
 			}
@@ -44,9 +54,9 @@ public class CaesarCipher {
 			
 			index = alpha.indexOf(plainText.charAt(i));
 			//System.out.println("index = " + index);
-			
+			*/
 			/** Doug's Method **/
-			keyAdded = (index + key) % alpha.length();
+			//keyAdded = (index + key) % alpha.length();
 			
 			/** Will's Method
 			keyAdded = index + key;
@@ -60,9 +70,10 @@ public class CaesarCipher {
 			//System.out.println("encoded is " + alpha.charAt(keyAdded));
 			 * */
 			
-			secretText += alpha.charAt(keyAdded);
+			//secretText += alpha.charAt(keyAdded);
+			
 			}
-		}
+		
 		
 		
 		
