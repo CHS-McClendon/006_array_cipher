@@ -2,11 +2,13 @@ package caesar;
 
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class BeginHere {
 
 	public static void main(String[] args) {
-		Scanner kbd = new Scanner(System.in);
 		
+		Scanner kbd = new Scanner(System.in);
 		CaesarCipher myCipher = new CaesarCipher();
 		
 		System.out.println("Please enter the plain text to encode:");
