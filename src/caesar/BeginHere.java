@@ -7,6 +7,19 @@ import javax.swing.JOptionPane;
 public class BeginHere {
 
 	public static void main(String[] args) {
+		/* Doug's example of drop-down JOP */
+		
+		Object[] selections = {"Encoder", "Decoder", "Cracker", "None"}; 
+		String selection = "Encoder";
+		selection = (String) JOptionPane.showInputDialog(
+				null, 
+				"select a utility: ", 
+				"Util select", 
+				JOptionPane.PLAIN_MESSAGE, 
+				null, 
+				selections, 
+				selection);
+		
 		
 		Scanner kbd = new Scanner(System.in);
 		CaesarCipher myCipher = new CaesarCipher();
