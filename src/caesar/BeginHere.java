@@ -41,6 +41,7 @@ public class BeginHere {
 		case "Exit":
 			JOptionPane.showMessageDialog(null, 
 				"We are now in the Exit switch block - so add some code already to get us out of here!");
+			System.exit(0);
 			break;
 		default:
 			JOptionPane.showMessageDialog(null, 
