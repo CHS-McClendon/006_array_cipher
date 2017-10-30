@@ -10,7 +10,7 @@ public class BeginHere {
 		/* Doug's example of drop-down JOP, with adds by Mr. M */
 		//Object is top class in Java, used when you are not sure what type might be used --
 		//using a String, int, class object, or what? -- so use Object [] array to cover anything
-		Object[] selectionsArray = { "Encoder", "Decoder", "Cracker", "Exit" };
+		Object[] selectionsArray = { "Encoder", "Decoder", "Cracker", "Exit", "late addition" };
 		String showFirst = "Encoder";
 		String selection = (String) JOptionPane.showInputDialog(
 				null, 
@@ -46,7 +46,7 @@ public class BeginHere {
 			JOptionPane.showMessageDialog(null, 
 				"We are now in the Unknown Case or Cancelled switch block - what do you want to do?");
 		}
-
+		//after the 'break' continue with the following code
 		
 		//OK, back to our earlier code ...
 		Scanner kbd = new Scanner(System.in);
